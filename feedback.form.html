@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fanofan</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/style.css">
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+  <style>
+    #feedback {
+      background: #f9f9f9;
+    }
+
+    #feedbackForm .form-label {
+      font-weight: 600;
+    }
+
+    #feedbackForm button {
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+<header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="/images/logo.png" alt="Logo">
+          <span class="text-white ms-2 fw-bold fs-4">FanoFan</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="/index.html">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="/about.html">ABOUT</a></li>
+            <li class="nav-item"><a class="nav-link" href="/gallery.html">GALLERY</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">CATEGORIES</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/ceiling.html">Ceiling fans</a></li>
+                <li><a class="dropdown-item" href="/bracket.html">Bracket fans</a></li>
+                <li><a class="dropdown-item" href="/standing.html">Standing fans</a></li>
+                <li><a class="dropdown-item" href="/table.html">Table fan</a></li>
+                <li><a class="dropdown-item" href="/exhuast.html">Exhaust</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="/contact.html">CONTACT US</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="py-5 bg-light" id="feedback">
+    <div class="container">
+      <h2 class="text-center mb-4 fw-bold text-dark mt-5">Customer Feedback</h2>
+      <form id="feedbackForm" class="row g-4 shadow p-4 bg-white rounded needs-validation" novalidate>
+
+        <div class="col-md-6">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" id="name" name="name" class="form-control" required>
+          <div class="invalid-feedback">Please enter your name.</div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" name="email" class="form-control" required>
+          <div class="invalid-feedback">Please enter a valid email address.</div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="category" class="form-label">Product Category</label>
+          <select id="category" name="category" class="form-select" required>
+            <option value="">Select category</option>
+            <option value="Ceiling">Ceiling Fan</option>
+            <option value="Bracket">Bracket Fan</option>
+            <option value="Table">Table Fan</option>
+            <option value="Standing">Standing Fan</option>
+            <option value="Exhaust">Exhaust Fan</option>
+          </select>
+          <div class="invalid-feedback">Please select a product category.</div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="product" class="form-label">Product Name</label>
+          <input type="text" id="product" name="product" class="form-control" required>
+          <div class="invalid-feedback">Please enter the product name.</div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="rating" class="form-label">Rating</label>
+          <select id="rating" name="rating" class="form-select" required>
+            <option value="">Rate us</option>
+            <option value="1">1 - Poor</option>
+            <option value="2">2 - Fair</option>
+            <option value="3">3 - Good</option>
+            <option value="4">4 - Very Good</option>
+            <option value="5">5 - Excellent</option>
+          </select>
+          <div class="invalid-feedback">Please provide a rating.</div>
+        </div>
+
+        <div class="col-12">
+          <label for="message" class="form-label">Message</label>
+          <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+          <div class="invalid-feedback">Please write your message.</div>
+        </div>
+
+        <div class="col-12 text-end">
+          <button type="submit" class="btn btn-primary px-5">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+<footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col brand">
+          <h2>FANoFAN</h2>
+          <hr />
+          <p>
+            Whether you have an industrial complex or a small shop, our experts are here to make your life easier, more
+            comfortable, and less expensive.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3>PRODUCTS</h3>
+          <hr />
+          <ul>
+            <a href="/ceiling.html">
+              <li>Ceiling Fans</li>
+            </a>
+            <a href="/bracket.html">
+              <li>Bracket Fans</li>
+            </a>
+            <a href="/table.html">
+              <li>Table Fans</li>
+            </a>
+            <a href="/standing.html">
+              <li>Standing Fans</li>
+            </a>
+            <a href="/exhuast.html">
+              <li>Exhaust Fans</li>
+            </a>
+            <a href="/get-offer.html">
+              <li>Offer Fans</li>
+            </a>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>COMPANY</h3>
+          <hr />
+          <ul>
+            <a href="/sitemap.html">
+              <li>Sitemap</li>
+            </a>
+            <a href="/about.html">
+              <li>About Us</li>
+            </a>
+            <a href="/gallery.html">
+              <li>Gallery</li>
+            </a>
+            <a href="/contact.html">
+              <li>Contact Us</li>
+            </a>
+            <a href="/qurey.html">
+              <li>Query</li>
+            </a>
+            <a href="/feedback.form.html">
+              <li>Feedback</li>
+            </a>
+
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>CONTACT</h3>
+          <hr />
+          <ul class="contact-info">
+            <li><i class="fas fa-home"></i> 250 Rt 59, Airmont NY 10901</li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:info@fanofan.com">info@fanofan.com</a></li>
+            <li><i class="fas fa-phone"></i> +01 234 567 88</li>
+            <li><i class="fas fa-fax"></i> +01 234 567 89</li>
+          </ul>
+
+        </div>
+      </div>
+
+      <hr>
+      <div class="d-flex justify-content-between ">
+        <p>&copy; FANoFAN. All rights reserved.</p>
+      </div>
+      <!-- WhatsApp Bubble -->
+           <a href="https://web.whatsapp.com/" target="_blank" style="text-decoration: none;">
+  <div style="position:fixed; bottom:80px; right:20px; background-color:white; padding:8px 12px; border-radius:20px; color:black; font-weight:bold; box-shadow:0 0 10px rgba(0,0,0,0.3); z-index:1000;">
+    Chat with us
+  </div>
+</a>
+
+      <div
+        style="position:fixed; bottom:20px; right:20px; background-color:#25D366; border-radius:50%; height:50px; width:50px; display:flex; justify-content:center; align-items:center; z-index:1000;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="height:30px;">
+      </div>
+    </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Feedback Form Script with Validation -->
+  <script>
+    (function () {
+      'use strict';
+
+      const form = document.getElementById('feedbackForm');
+
+      form.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        if (!form.checkValidity()) {
+          form.classList.add('was-validated');
+        } else {
+          alert('✅ Thank you for your feedback!');
+          form.reset();
+          form.classList.remove('was-validated');
+        }
+      }, false);
+    })();
+  </script>
+
+</body>
+
+</html>

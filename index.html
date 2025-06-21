@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fanofan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="/images/logo.png" alt="Logo">
+          <span class="text-white ms-2 fw-bold fs-4">FanoFan</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="/index.html">HOME</a></li>
+            <li class="nav-item"><a class="nav-link" href="/about.html">ABOUT</a></li>
+            <li class="nav-item"><a class="nav-link" href="/gallery.html">GALLERY</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">CATEGORIES</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/ceiling.html">Ceiling fans</a></li>
+                <li><a class="dropdown-item" href="/bracket.html">Bracket fans</a></li>
+                <li><a class="dropdown-item" href="/standing.html">Standing fans</a></li>
+                <li><a class="dropdown-item" href="/table.html">Table fan</a></li>
+                <li><a class="dropdown-item" href="/exhuast.html">Exhaust</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="/contact.html">CONTACT US</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <!-- Hero Slider -->
+      <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active"
+            style="background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)) , url(/images/banner.1.jpg) center/cover no-repeat;">
+            <div class="carousel-caption text-center text-white">
+              <h1 class="fw-bold">BLADES DESIGNED BY EXPERTS</h1>
+              <p class="lead">Designed to quietly and efficiently deliver powerful airflow to commercial and public
+                spaces.</p>
+              <a href="#collection" class="btn btn-custom btn-sm">View Collections &gt;</a>
+            </div>
+          </div>
+
+          <div class="carousel-item"
+            style="background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)) , url(/images/banner.2.jpg) center/cover no-repeat;">
+            <div class="carousel-caption text-center text-white">
+              <h1 class="fw-bold">ENGINEERED FOR PERFORMANCE</h1>
+              <p class="lead">Advanced direct-drive technology and a patented airfoil system in action.</p>
+              <a href="#collection" class="btn btn-custom btn-sm">View Collections &gt;</a>
+            </div>
+          </div>
+
+          <div class="carousel-item"
+            style="background: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)) , url(/images/banner.3.webp) center/cover no-repeat;">
+            <div class="carousel-caption text-center text-white">
+              <h1 class="fw-bold">COOLING IN STYLE</h1>
+              <p class="lead">Power and elegance combined — perfect for your indoor environments.</p>
+              <a href="#collection" class="btn btn-custom btn-sm">View Collections &gt;</a>
+            </div>
+          </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+
+      <!-- Yellow Marquee with Button -->
+      <!-- Yellow Marquee with Centered Button -->
+      <div class="bg-warning py-2 d-flex flex-column flex-md-row justify-content-between align-items-center px-3">
+        <marquee behavior="scroll" direction="left" scrollamount="6"
+          class="fw-bold text-dark w-100 text-center mb-2 mb-md-0">
+          🎉 Big Summer Sale! Get up to 30% OFF on all fan categories – Limited Time Offer! 🎉
+        </marquee>
+        <div class="text-center w-100">
+          <a href="/get-offer.html" class="btn btn-danger btn-sm px-4 fw-bold shadow">
+            Get Offer
+          </a>
+        </div>
+      </div>
+
+
+
+    </section>
+    <main>
+      <section class="product-carousel py-5">
+  <!-- Heading Section -->
+  <!-- Explore Our Collection Section -->
+<section id="collection">
+  <div class="container text-center my-5">
+     <h2 style="color: #000; font-size: 24px; margin-bottom: 20px;">SHOP BY CATEGORY</h2>
+    <p class="text-muted" style="max-width: 600px; margin: 0 auto; font-size: 1.1rem;"> Discover the perfect fan for every space. From stylish ceiling fans to powerful exhaust solutions, our curated collection blends comfort, performance, and design—crafted just for you.</p>
+  </div>
+
+  <!-- Arrows -->
+  <button class="arrow arrow-left" onclick="scrollCarousel(-1)">&#8249;</button>
+  <button class="arrow arrow-right" onclick="scrollCarousel(1)">&#8250;</button>
+
+  <!-- Carousel Container -->
+  <div class="carousel-container">
+    <div class="carousel-track" id="carouselTrack">
+      <!-- Product Cards with clickable links -->
+      <a href="/ceiling.html" class="product-card">
+        <img src="/images/fan.42.png" alt="Ceiling Fan">
+        <h5>Ceiling Fan</h5>
+      </a>
+      <a href="/standing.html" class="product-card">
+        <img src="images/standing.24.png" alt="Standing Fan">
+        <h5>Exhaust Fans</h5>
+      </a>
+      <a href="/bracket.html" class="product-card">
+        <img src="images/bracketfan.webp" alt="Bracket Fan">
+        <h5>Bracket Fan</h5>
+      </a>
+      <a href="/table.html" class="product-card">
+        <img src="images/tablefan.png" alt="Table Fan">
+        <h5>Table Fan</h5>
+      </a>
+      <a href="/exhuast.html" class="product-card">
+        <img src="images/exhuastfan.webp" alt="Exhaust Fan">
+        <h5>Exhaust Fan</h5>
+      </a>
+    </div>
+  </div>
+</section>
+<section>
+<!-- Slider Wrapper -->
+  <div style="position: relative; width: 95vw; height: 100vh; overflow: hidden;">
+
+    <!-- Slides Container -->
+    <div id="slider" style="display: flex; transition: transform 0.5s ease; width: 600vw; height: 100vh;">
+
+      <div style="flex: 0 0 100vw; height: 100vh; display: flex; justify-content: center; align-items: center;">
+        <img src="/images/Artboard_2.webp" style="max-width: 100%; max-height: 100%;">
+      </div>
+      <div style="flex: 0 0 100vw; height: 100vh; display: flex; justify-content: center; align-items: center;">
+        <img src="/images/Artboard_3.webp" style="max-width: 100%; max-height: 100%;">
+      </div>
+      <div style="flex: 0 0 100vw; height: 100vh; display: flex; justify-content: center; align-items: center;">
+        <img src="/images/Artboard_5.webp" style="max-width: 100%; max-height: 100%;">
+      </div>
+      <div style="flex: 0 0 100vw; height: 100vh; display: flex; justify-content: center; align-items: center;">
+        <img src="/images/Artboard_6.webp" style="max-width: 100%; max-height: 100%;">
+      </div>
+      <div style="flex: 0 0 100vw; height: 100vh; display: flex; justify-content: center; align-items: center;">
+        <img src="/images/Artboard_7.webp" style="max-width: 100%; max-height: 100%;">
+      </div>
+      <div style="flex: 0 0 100vw; height: 100vh; display: flex; justify-content: center; align-items: center;">
+        <img src="/images/Ovate_Luminous (1).webp" style="max-width: 100%; max-height: 100%;">
+      </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <button onclick="prevSlide()" style="position: absolute; top: 50%; left: 20px; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; padding: 10px 15px; font-size: 24px; cursor: pointer; z-index: 10;">❮</button>
+    <button onclick="nextSlide()" style="position: absolute; top: 50%; right: 20px; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; padding: 10px 15px; font-size: 24px; cursor: pointer; z-index: 10;">❯</button>
+
+  </div>
+</section>
+<section>
+<h2 class="section-title">Explore Now</h2>
+
+  <div class="category-tab-container">
+    <button class="category-button" onclick="showCategory('ceiling')">Ceiling Fans</button>
+    <button class="category-button" onclick="showCategory('bracket')">Bracket Fans</button>
+    <button class="category-button" onclick="showCategory('standing')">Standing Fans</button>
+    <button class="category-button" onclick="showCategory('table')">Table Fans</button>
+    <button class="category-button" onclick="showCategory('exhaust')">Exhaust Fans</button>
+  </div>
+
+  <!-- Category: Ceiling Fans -->
+  <div id="ceiling" class="category">
+    <div class="category-container">
+      <div class="category-card">
+        <img src="/images/FAN1-jpg.png" alt="Havells Ceiling Fan">
+        <div>Havells Ceiling Fan</div>
+        <span class="price">Rs.28,000</span>
+      </div>
+      <div class="category-card">
+        <img src="/images/FAN7.JPG" alt="Sky Dancer Fan">
+        <div>Sky Dancer Fan</div>
+        <span class="price">Rs.23,000</span>
+      </div>
+      <div class="category-card">
+        <img src="/images/FAN6.JPG" alt="Wind Dancer Fan">
+        <div>Wind Dancer Fan</div>
+        <span class="price">Rs.24,000</span>
+      </div>
+    </div>
+    <a href="/ceiling.html" class="shop-all-btn">Shop All →</a>
+  </div>
+
+  <!-- Category: Bracket Fans -->
+  <div id="bracket" class="category">
+    <div class="category-container">
+      <div class="category-card">
+        <img src="/images/bracket.2.png" alt="Lumina Power Bracket Fan">
+        <div>Lumina Power Bracket Fan</div>
+        <span class="price">Rs.28,000</span>
+      </div>
+      <div class="category-card">
+        <img src="/images/bracketoffer.jpg.png" alt="Havells Prime Bracket Fan">
+        <div>Havells Prime Bracket Fan</div>
+        <span class="price">Rs.28,000</span>
+      </div>
+      <div class="category-card">
+        <img src="/images/bracketfan.webp" alt="Adjustable Tilt Fan">
+        <div>Adjustable Tilt Fan</div>
+        <span class="price">Rs.28,000</span>
+      </div>
+    </div>
+    <a href="/bracket.html" class="shop-all-btn">Shop All →</a>
+  </div>
+
+  <!-- Category: Standing Fans -->
+  <div id="standing" class="category">
+    <div class="category-container">
+      <div class="category-card">
+        <img src="/images/standing.4.jpeg" alt="Royal Flow Standing Fan">
+        <div>Royal Flow Standing Fan</div>
+        <span class="price">Rs.19,000</span>
+      </div>
+      <div class="category-card">
+        <img src="/images/standing.8.jpeg" alt="Aero Wave Pedestal Fan">
+        <div>Aero Wave Pedestal Fan</div>
+        <span class="price">Rs.20,000</span>
+      </div>
+      <div class="category-card">
+        <img src="/images/standing.9.jpeg" alt="Lumina Power Stand Fan">
+        <div>Lumina Power Stand Fan</div>
+        <span class="price">Rs.25,000</span>
+      </div>
+    </div>
+    <a href="/standing.html" class="shop-all-btn">Shop All →</a>
+  </div>
+
+  <!-- Category: Table Fans -->
+  <div id="table" class="category">
+    <div class="category-container">
+      <div class="category-card">
+        <img src="/images/table.1.jpeg" alt="IronBreeze Table Fan">
+        <div>IronBreeze Table Fan</div>
+        <span class="price">Rs.10,000</span>
+      </div>
+      <div class="category-card">
+        <img src="/images/table.2.jpeg" alt="SweepMax Table Fan">
+        <div>SweepMax Table Fan</div>
+        <span class="price">Rs.12,000</span>
+      </div>
+      <div class="category-card">
+        <img src="/images/table.3.jpeg" alt="CoolSpin AC Table Fan">
+        <div>CoolSpin AC Table Fan</div>
+        <span class="price">Rs.15,000</span>
+      </div>
+    </div>
+    <a href="/table.html" class="shop-all-btn">Shop All →</a>
+  </div>
+
+  <!-- Category: Exhaust Fans -->
+  <div id="exhaust" class="category">
+    <div class="category-container">
+      <div class="category-card">
+        <img src="/images/exhuast.1.jpeg" alt="IronBreeze Exhaust Fan">
+        <div>IronBreeze Exhaust Fan</div>
+        <span class="price">Rs.15,000</span>
+      </div>
+      <div class="category-card">
+        <img src="/images/exhuast.2.jpeg" alt="SweepMaster Exhaust Fan">
+        <div>SweepMaster Exhaust Fan</div>
+        <span class="price">Rs.22,000</span>
+      </div>
+      <div class="category-card">
+        <img src="/images/exhuast.3.jpeg" alt="StormFlow Exhaust Fan">
+        <div>StormFlow Exhaust Fan</div>
+        <span class="price">Rs.25,000</span>
+      </div>
+    </div>
+    <a href="/exhuast.html" class="shop-all-btn">Shop All →</a>
+  </div>
+
+
+</section>
+
+<!-- Services Section -->
+<section class="services-section">
+  <div class="container">
+    <h2 class="section-title">Our Premium Services</h2>
+    <div class="row g-4">
+      
+      <!-- Service 1 -->
+      <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
+        <div class="service-card w-100 text-center">
+          <i class="fas fa-tools fa-2x mb-3"></i>
+          <h5>Installation</h5>
+          <p>Expert ceiling fan setup at your doorstep with safety and precision.</p>
+        </div>
+      </div>
+
+      <!-- Service 2 -->
+      <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
+        <div class="service-card w-100 text-center">
+          <i class="fas fa-wrench fa-2x mb-3"></i>
+          <h5>Repair & Maintenance</h5>
+          <p>Quick and reliable fan repair services with genuine parts.</p>
+        </div>
+      </div>
+
+      <!-- Service 3 -->
+      <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
+        <div class="service-card w-100 text-center">
+          <i class="fas fa-shipping-fast fa-2x mb-3"></i>
+          <h5>Fast Delivery</h5>
+          <p>Get your fans delivered within 24 hours anywhere in Pakistan.</p>
+        </div>
+      </div>
+
+      <!-- Service 4 -->
+      <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
+        <div class="service-card w-100 text-center">
+          <i class="fas fa-user-shield fa-2x mb-3"></i>
+          <h5>Warranty Support</h5>
+          <p>Enjoy 1-year replacement warranty on all premium fans.</p>
+        </div>
+      </div>
+
+      <!-- Service 5 -->
+      <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
+        <div class="service-card w-100 text-center">
+          <i class="fas fa-star fa-2x mb-3"></i>
+          <h5>VIP Customer Care</h5>
+          <p>Priority hotline support and dedicated agents for VIP customers.</p>
+        </div>
+      </div>
+
+      <!-- Service 6 -->
+      <div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
+        <div class="service-card w-100 text-center">
+          <i class="fas fa-hand-holding-heart fa-2x mb-3"></i>
+          <h5>Customized Solutions</h5>
+          <p>Tailored fan recommendations for your space, needs, and budget.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col brand">
+          <h2>FANoFAN</h2>
+          <hr />
+          <p>
+            Whether you have an industrial complex or a small shop, our experts are here to make your life easier, more
+            comfortable, and less expensive.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3>PRODUCTS</h3>
+          <hr />
+          <ul>
+            <a href="/ceiling.html">
+              <li>Ceiling Fans</li>
+            </a>
+            <a href="/bracket.html">
+              <li>Bracket Fans</li>
+            </a>
+            <a href="/table.html">
+              <li>Table Fans</li>
+            </a>
+            <a href="/standing.html">
+              <li>Standing Fans</li>
+            </a>
+            <a href="/exhuast.html">
+              <li>Exhaust Fans</li>
+            </a>
+            <a href="/get-offer.html">
+              <li>Offer Fans</li>
+            </a>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>COMPANY</h3>
+          <hr />
+          <ul>
+            <a href="/sitemap.html">
+              <li>SiteMap</li>
+            </a>
+            <a href="/about.html">
+              <li>About Us</li>
+            </a>
+            <a href="/gallery.html">
+              <li>Gallery</li>
+            </a>
+            <a href="/contact.html">
+              <li>Contact Us</li>
+            </a>
+            <a href="/qurey.html">
+              <li>Query</li>
+            </a>
+            <a href="/feedback.form.html">
+              <li>Feedback</li>
+            </a>
+
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>CONTACT</h3>
+          <hr />
+          <ul class="contact-info">
+            <li><i class="fas fa-home"></i> 250 Rt 59, Airmont NY 10901</li>
+            <li><i class="fas fa-envelope"></i> <a href="mailto:info@fanofan.com">info@fanofan.com</a></li>
+            <li><i class="fas fa-phone"></i> +01 234 567 88</li>
+            <li><i class="fas fa-fax"></i> +01 234 567 89</li>
+          </ul>
+
+        </div>
+      </div>
+
+      <hr>
+      <div class="d-flex justify-content-between ">
+        <p>&copy; FANoFAN. All rights reserved.</p>
+      </div>
+      <!-- WhatsApp Bubble -->
+      <a href="https://web.whatsapp.com/" target="_blank" style="text-decoration: none;">
+  <div style="position:fixed; bottom:80px; right:20px; background-color:white; padding:8px 12px; border-radius:20px; color:black; font-weight:bold; box-shadow:0 0 10px rgba(0,0,0,0.3); z-index:1000;">
+    Chat with us
+  </div>
+</a>
+
+      <div
+        style="position:fixed; bottom:20px; right:20px; background-color:#25D366; border-radius:50%; height:50px; width:50px; display:flex; justify-content:center; align-items:center; z-index:1000;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="height:30px;">
+      </div>
+    </footer>
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      // Optional: Navbar color change on scroll
+      window.addEventListener('scroll', function () {
+        const navbar = document.querySelector('.navbar');
+        navbar.classList.toggle('scrolled', window.scrollY > 50);
+      });
+    </script>
+    <script>
+  const track = document.getElementById('carouselTrack');
+  const card = track.querySelector('.product-card');
+  let currentIndex = 0;
+
+  function getVisibleCount() {
+    const containerWidth = document.querySelector('.carousel-container').offsetWidth;
+    const cardWidth = card.offsetWidth + 20; // 20px gap
+    return Math.floor(containerWidth / cardWidth);
+  }
+
+  function scrollCarousel(direction) {
+    const totalCards = track.querySelectorAll('.product-card').length;
+    const visibleCount = getVisibleCount();
+    const maxIndex = totalCards - visibleCount;
+
+    currentIndex += direction * visibleCount;
+
+    if (currentIndex < 0) currentIndex = 0;
+    if (currentIndex > maxIndex) currentIndex = maxIndex;
+
+    const shift = currentIndex * (card.offsetWidth + 20); // 20px gap
+    track.style.transform = `translateX(-${shift}px)`;
+  }
+</script>
+<!-- JavaScript -->
+ 
+ <script>
+    let currentSlide = 0;
+    const slider = document.getElementById('slider');
+    const totalSlides = slider.children.length;
+
+    function updateSliderPosition() {
+      slider.style.transform = 'translateX(' + (-currentSlide * 100) + 'vw)';
+    }
+
+    function nextSlide() {
+      if (currentSlide < totalSlides - 1) {
+        currentSlide++;
+        updateSliderPosition();
+      }
+    }
+
+    function prevSlide() {
+      if (currentSlide > 0) {
+        currentSlide--;
+        updateSliderPosition();
+      }
+    }
+      // Optional: auto-slide every 5 seconds
+  setInterval(nextSlide, 5000);
+</script>
+  </script>
+
+<script>
+    function showFans(id) {
+      var sections = ['bracket', 'ceiling', 'standing', 'table', 'exhaust'];
+      sections.forEach(function(sec) {
+        var el = document.getElementById(sec);
+        if (el) el.style.display = 'none';
+      });
+      var current = document.getElementById(id);
+      if (current) current.style.display = 'block';
+    }
+     setInterval(nextSlide, 9000);
+  </script>
+
+  <!-- JavaScript for Tabs -->
+  <script>
+    function showCategory(category) {
+      const containers = document.querySelectorAll('.cards-container');
+      const buttons = document.querySelectorAll('.tabs button');
+
+      containers.forEach(container => {
+        container.classList.remove('active');
+      });
+      buttons.forEach(button => {
+        button.classList.remove('active');
+      });
+
+      document.getElementById(category).classList.add('active');
+      event.target.classList.add('active');
+    }
+  </script>
+<script>
+    function showCategory(categoryId) {
+      const categories = document.querySelectorAll('.category');
+      categories.forEach(cat => cat.style.display = 'none');
+
+      const activeCategory = document.getElementById(categoryId);
+      if (activeCategory) {
+        activeCategory.style.display = 'block';
+      }
+    }
+
+    // Default: show first category
+    showCategory('ceiling');
+  </script>
+</body>
+
+</html>

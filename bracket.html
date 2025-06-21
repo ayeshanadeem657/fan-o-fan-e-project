@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fanofan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .card.custom-card {
+            box-shadow: 0 4px 12px rgba(128, 128, 128, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card.custom-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(128, 128, 128, 0.7);
+        }
+
+        .card.custom-card h5 {
+            color: rgb(244, 244, 246);
+        }
+
+        .btn-collection {
+            font-size: 0.85rem;
+            padding: 8px 16px;
+            border-radius: 20px;
+        }
+        .btn-dark:hover {
+    background-color: #6c757d !important;
+}
+.card-img-top {
+    height: 180px;
+    width: 100%; /* Make image take full width of card */
+    object-fit: contain; /* Keep aspect ratio inside the container */
+}
+
+.card.h-100 {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Ensures the card uses full column width */
+    max-width: 100%; /* Prevents card from overflowing */
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="/images/logo.png" alt="Logo">
+                    <span class="text-white ms-2 fw-bold fs-4">Fanofan</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="/index.html">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/about.html">ABOUT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/gallery.html">GALLERY</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">CATEGORIES</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/ceiling.html">Ceiling Fan</a></li>
+                                <li><a class="dropdown-item" href="/bracket.html">Bracket fans</a></li>
+                                <li><a class="dropdown-item" href="/standing.html">Standing fans</a></li>
+                                <li><a class="dropdown-item" href="/table.html">Table fan</a></li>
+                                <li><a class="dropdown-item" href="/exhuast.html">Exhaust</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="/contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+    <section id="bracket-hero" style="min-height: 100vh; background-color: #f8f9fa;">
+        <div class="container d-flex flex-column justify-content-center align-items-center text-center"
+            style="min-height: 100vh;">
+            <h1 class="display-2 fw-bold text-white">Bracket fans</h1>
+            <p class="lead text-white">Bracket fans are compact wall-mounted fans designed for targeted airflow in small or confined spaces.
+
+</p>
+            <a href="#collections" class="btn btn-dark mt-3">View Collection</a>
+        </div>
+    </section>
+
+    <section id="collections" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center text-dark fw-bold mb-4">bracket Fans Collections</h2>
+            <p class="text-center text-dark mb-5">
+               Bracket fans are wall-mounted fans ideal for small spaces where floor or ceiling space is limited. They provide targeted airflow with adjustable angles for effective cooling.
+            </p>
+            <div class="row g-4">
+
+                <!-- Fan 1 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-sm"data-aos="fade-down">
+                        <img src="/images/bracketfanforgallery-png.png" class="card-img-top" alt="Fan Image">
+                        <div class="card-body text-dark">
+                            <h5 class="card-title">SkyBliss Bracket Fan</h5>
+                            <p class="card-text">AC/DC</p>
+                            <span class="price text-danger fw-bold">Rs.20,000</span><br>
+                            <a href="/book now form.html">
+                                <button class="btn btn-dark mt-2 w-100">Book Now</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fan 2 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-sm"data-aos="fade-down">
+                        <img src="/images/bracketoffer.jpg.png" class="card-img-top" alt="Fan Image">
+                        <div class="card-body text-dark">
+                            <h5 class="card-title">Havells Prime Bracket Fan</h5>
+                            <p class="card-text">AC</p>
+                            <span class="price text-danger fw-bold">Rs.22,000</span><br>
+                            <a href="/book now form.html">
+                                <button class="btn btn-dark mt-2 w-100">Book Now</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fan 3 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-sm"data-aos="fade-down">
+                        <img src="/images/bracketoffer2.jpg.png" class="card-img-top" alt="Fan Image">
+                        <div class="card-body text-dark">
+                            <h5 class="card-title">SkySweep Wall-Mount Fan</h5>
+                            <p class="card-text">AC</p>
+                            <span class="price text-danger fw-bold">Rs.21,000</span><br>
+                            <a href="/book now form.html">
+                                <button class="btn btn-dark mt-2 w-100">Book Now</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fan 4 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-sm"data-aos="fade-down">
+                        <img src="/images/bracketoffer3.jpg.png" class="card-img-top" alt="Fan Image">
+                        <div class="card-body text-dark">
+                            <h5 class="card-title">Royal Flow Wall Fan</h5>
+                            <p class="card-text">AC/DC</p>
+                            <span class="price text-danger fw-bold">Rs.9,000</span><br>
+                            <a href="/book now form.html">
+                                <button class="btn btn-dark mt-2 w-100">Book Now</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fan 5 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-sm"data-aos="fade-down">
+                        <img src="/images/bracket.2.png" class="card-img-top" alt="Fan Image">
+                        <div class="card-body text-dark">
+                            <h5 class="card-title">Lumina Power Bracket Fan</h5>
+                            <p class="card-text">AC/DC</p>
+                            <span class="price text-danger fw-bold">Rs.25,000</span><br>
+                            <a href="/book now form.html">
+                                <button class="btn btn-dark mt-2 w-100">Book Now</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fan 6 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-sm"data-aos="fade-down">
+                        <img src="/images/bracket.3.png" class="card-img-top" alt="Fan Image">
+                        <div class="card-body text-dark">
+                            <h5 class="card-title">High-Speed Wall Fan</h5>
+                            <p class="card-text">AC</p>
+                            <span class="price text-danger fw-bold">Rs.30,000</span><br>
+                            <a href="/book now form.html">
+                                <button class="btn btn-dark mt-2 w-100">Book Now</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fan 7 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-sm"data-aos="fade-down">
+                        <img src="/images/bracket.5.png" class="card-img-top" alt="Fan Image">
+                        <div class="card-body text-dark">
+                            <h5 class="card-title">Aero Wave Wall-Mounted Fan</h5>
+                            <p class="card-text">AC/DC</p>
+                            <span class="price text-danger fw-bold">Rs.27,000</span><br>
+                            <a href="/book now form.html">
+                                <button class="btn btn-dark mt-2 w-100">Book Now</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fan 8 -->
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card h-100 shadow-sm"data-aos="fade-down">
+                        <img src="/images/bracket.7.png" class="card-img-top" alt="Fan Image">
+                        <div class="card-body text-dark">
+                            <h5 class="card-title">Aerolux Breeze Bracket Fan</h5>
+                            <p class="card-text">AC/DC</p>
+                            <span class="price text-danger fw-bold">Rs.24,000</span><br>
+                            <a href="/book now form.html">
+                                <button class="btn btn-dark mt-2 w-100">Book Now</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+               
+            </div>
+        </div>
+    </section>
+</main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col brand">
+                <h2>FANoFAN</h2>
+                <hr />
+                <p>
+                    Whether you have an industrial complex or a small shop, our experts are here to make your life
+                    easier, more
+                    comfortable, and less expensive.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h3>PRODUCTS</h3>
+                <hr />
+                <ul>
+                    <a href="/ceiling.html">
+                        <li>Ceiling Fans</li>
+                    </a>
+                    <a href="/bracket.html">
+                        <li>Bracket Fans</li>
+                    </a>
+                    <a href="/table.html">
+                        <li>Table Fans</li>
+                    </a>
+                    <a href="/standing.html">
+                        <li>Standing Fans</li>
+                    </a>
+                    <a href="/exhuast.html">
+                        <li>Exhaust Fans</li>
+                    </a>
+                    <a href="/get-offer.html">
+              <li>Offer Fans</li>
+            </a>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>COMPANY</h3>
+                <hr />
+                <ul>
+                    <a href="/sitemap.html">
+                        <li>SiteMap</li>
+                    </a>
+                    <a href="/about.html">
+                        <li>About Us</li>
+                    </a>
+                    <a href="/gallery.html">
+                        <li>Gallery</li>
+                    </a>
+                    <a href="/contact.html">
+                        <li>Contact Us</li>
+                    </a>
+                    <a href="/qurey.html">
+                        <li>Query</li>
+                    </a>
+                    <a href="/feedback.form.html">
+                        <li>Feedback</li>
+                    </a>
+
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>CONTACT</h3>
+                <hr />
+                <ul class="contact-info">
+                    <li><i class="fas fa-home"></i> 250 Rt 59, Airmont NY 10901</li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:info@fanofan.com">info@fanofan.com</a></li>
+                    <li><i class="fas fa-phone"></i> +01 234 567 88</li>
+                    <li><i class="fas fa-fax"></i> +01 234 567 89</li>
+                </ul>
+
+            </div>
+        </div>
+
+        <hr>
+        <div class="d-flex justify-content-between ">
+            <p>&copy; FANoFAN. All rights reserved.</p>
+        </div>
+        <!-- WhatsApp Bubble -->
+             <a href="https://web.whatsapp.com/" target="_blank" style="text-decoration: none;">
+  <div style="position:fixed; bottom:80px; right:20px; background-color:white; padding:8px 12px; border-radius:20px; color:black; font-weight:bold; box-shadow:0 0 10px rgba(0,0,0,0.3); z-index:1000;">
+    Chat with us
+  </div>
+</a>
+        <div
+            style="position:fixed; bottom:20px; right:20px; background-color:#25D366; border-radius:50%; height:50px; width:50px; display:flex; justify-content:center; align-items:center; z-index:1000;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"
+                style="height:30px;">
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        // Optional: Navbar color change on scroll
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
+        });
+    </script>
+</body>
+
+</html>
