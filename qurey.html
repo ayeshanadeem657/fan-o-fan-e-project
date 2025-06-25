@@ -49,23 +49,23 @@
   </header>
  <main>
   
-<section id="book-now" class="booking-section py-5" style="background: url('/images/qurey.jpg') no-repeat center center/cover;">
-  <div class="container">
-    <div class="booking-wrapper p-5 rounded-4 shadow-lg text-white">
+<section id="book-now" class="booking-section py-5" style="background:linear-gradient(rgba(0, 0, 0, 0.288),rgba(0, 0, 0, 0.336)), url('/images/qurey.jpg') no-repeat center center/cover; ">
+  <div class="container ">
+    <div class="booking-wrapper p-5 rounded-4 shadow-lg ">
       <div class="row">
 
         <!-- Form Column -->
         <div class="col-md-6">
-          <h2 class="mb-4 text-black fw-bold">Query Form</h2>
-          <form>
+          <h2 class="mb-4  fw-bold">Query Form</h2>
+          <form id="bookingForm">
             <div class="mb-3">
-              <input type="text" class="form-control" placeholder="Your Name" required>
+              <input type="text" id="name" class="form-control" placeholder="Your Name" required>
             </div>
             <div class="mb-3">
-              <input type="email" class="form-control" placeholder="Your Email" required>
+              <input type="email" id="email" class="form-control" placeholder="Your Email" required>
             </div>
             <div class="mb-3">
-              <textarea class="form-control" rows="4" placeholder="Your Qurey" required></textarea>
+              <textarea class="form-control" id="message" rows="4" placeholder="Your Qurey" required></textarea>
             </div>
             <button type="submit" class="btn btn-submit w-100 mt-2 btn-primary">SEND</button>
           </form>
@@ -73,7 +73,7 @@
 
         <!-- Description Column -->
         <div class="col-md-6 d-flex align-items-center">
-          <div class="description-box ms-md-4 text-black">
+          <div class="description-box ms-md-4 ">
             <h3>Need Help?</h3>
             <p>Fill out the form with your query, and we’ll get back to you as soon as possible. Be specific so we can assist you better.</p>
             <ul style="margin-top: 20px; padding-left: 20px;">
@@ -189,23 +189,39 @@
     <script>
       AOS.init();
     </script>
-    <script>
-      // Optional: Navbar color change on scroll
-      window.addEventListener('scroll', function () {
-        const navbar = document.querySelector('.navbar');
-        navbar.classList.toggle('scrolled', window.scrollY > 50);
-      });
-    </script>
-    <script>
-  document.getElementById("bookingForm").addEventListener("submit", function (e) {
-    e.preventDefault(); // prevent actual form submission
+<!-- Include jQuery (add before </body>) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    // Show alert
-    alert("Your booking form has been submitted!");
+<script>
+  $(document).ready(function () {
+    $('#bookingForm').submit(function (e) {
+      e.preventDefault();
 
-    // Clear form
-    this.reset();
+      // Get values
+      const name = $('#name').val().trim();
+      const email = $('#email').val().trim();
+      const message = $('#message').val().trim();
+
+      // Basic validation
+      if (name === '' || email === '' || message === '') {
+        alert('Please fill in all fields.');
+        return;
+      }
+
+      // Email validation
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(email)) {
+        alert('Please enter a valid email address.');
+        return;
+      }
+
+      // If all good
+      alert('Your query has been submitted successfully!');
+      $(this).trigger('reset');
+    });
   });
 </script>
+
+
 </body>
 </html>

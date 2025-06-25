@@ -242,13 +242,42 @@
   <script>
     AOS.init();
   </script>
-  <script>
-    // Optional: Navbar color change on scroll
-    window.addEventListener('scroll', function () {
-      const navbar = document.querySelector('.navbar');
-      navbar.classList.toggle('scrolled', window.scrollY > 50);
+<!-- jQuery (place before your custom script) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+    $('form').submit(function (e) {
+      e.preventDefault();
+
+      const name = $('#name').val().trim();
+      const email = $('#email').val().trim();
+      const phone = $('#phone').val().trim();
+      const message = $('#textarea').val().trim();
+
+      if (name === '' || email === '' || phone === '' || message === '') {
+        alert('Please fill out all fields.');
+        return;
+      }
+
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(email)) {
+        alert('Please enter a valid email.');
+        return;
+      }
+
+      const phonePattern = /^\d{7,15}$/;
+      if (!phonePattern.test(phone)) {
+        alert('Please enter a valid phone number (7–15 digits).');
+        return;
+      }
+
+      alert('Your message has been submitted successfully!');
+      $(this).trigger('reset');
     });
-  </script>
+  });
+</script>
+
 </body>
 
 </html>
