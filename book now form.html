@@ -16,11 +16,10 @@
 <style>
 /* Section with background image */
 .booking-section {
-background: url('/images/booknow.jpg.jpg') no-repeat center center;
+background: url('/images/booknow.jpg') no-repeat center center;
 
   background-size: cover;
   position: relative;
-  /* margin: 150px 0px 100px 0px !important; */
 }
 
 
@@ -59,7 +58,7 @@ background: url('/images/booknow.jpg.jpg') no-repeat center center;
 
 <body>
      <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg fixed-top mb-5">
+        <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="#">
                     <img src="/images/logo.png" alt="Logo">
@@ -76,7 +75,7 @@ background: url('/images/booknow.jpg.jpg') no-repeat center center;
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">CATEGORIES</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/selling.html">Selling fans</a></li>
+                                <li><a class="dropdown-item" href="/ceiling.html">Ceiling fans</a></li>
                                 <li><a class="dropdown-item" href="/bracket.html">Bracket fans</a></li>
                                 <li><a class="dropdown-item" href="/standing.html">Standing fans</a></li>
                                 <li><a class="dropdown-item" href="/table.html">Table fan</a></li>
@@ -88,7 +87,7 @@ background: url('/images/booknow.jpg.jpg') no-repeat center center;
                 </div>
             </div>
         </nav>
-<section id="book-now" class="booking-section my-5">
+<section id="book-now" class="booking-section py-5">
   <div class="container">
     <div class="booking-wrapper p-5 rounded-4 shadow-lg text-white">
       <div class="row">
@@ -116,7 +115,7 @@ background: url('/images/booknow.jpg.jpg') no-repeat center center;
         <div class="col-md-6 d-flex align-items-center">
           <div class="description-box ms-md-4 text-black">
             <h3>Why Choose Us?</h3>
-            <p>Fanofans provides professional installation and fast support for any fan type—residential or industrial. Book with us for quick service and peace of mind.</p>
+            <p class="fw-bold text-white">Fanofans provides professional installation and fast support for any fan type—residential or industrial. Book with us for quick service and peace of mind.</p>
           </div>
         </div>
       </div>
@@ -249,7 +248,7 @@ background: url('/images/booknow.jpg.jpg') no-repeat center center;
     // Optional: Navbar color change on scroll
     window.addEventListener('scroll', function () {
       const navbar = document.querySelector('.navbar');
-      navbar.classList.toggle('scrolled-2', window.scrollY > 100);
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
     });
   </script>
 </body>
