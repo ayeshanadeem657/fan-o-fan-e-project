@@ -78,6 +78,9 @@ html,body {
     .navbar.scrolled {
       background-color: #212529 !important;
     }
+    .navbar.scrolled-2 {
+      background-color: #8b8c8d !important;
+    }
     .btn-outline-dark :hover{
       background-color: #76defa;
     }
